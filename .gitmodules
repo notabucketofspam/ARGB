@@ -1,4 +1,3 @@
-
 [submodule "FreeRTOS/miniAVRfreeRTOS"]
 	path = FreeRTOS/miniAVRfreeRTOS
 	url = https://github.com/feilipu/miniAVRfreeRTOS.git

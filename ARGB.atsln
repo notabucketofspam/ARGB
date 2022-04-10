@@ -1,0 +1,58 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Atmel Studio Solution File, Format Version 11.00
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ATmega328P", "ATmega328P\ATmega328P.cppproj", "{DCE6C7E3-EE26-4D79-826B-08594B9AD897}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F9FB3030-BB07-4C60-8844-CD22C28F612D} = {F9FB3030-BB07-4C60-8844-CD22C28F612D}
+		{5E8F2F63-06E1-4ED9-AE83-7B500C0D4306} = {5E8F2F63-06E1-4ED9-AE83-7B500C0D4306}
+		{C7AF4BA3-C77B-4B82-BBB7-30ADF31DE6CF} = {C7AF4BA3-C77B-4B82-BBB7-30ADF31DE6CF}
+		{32616ACE-6851-43EE-9BD4-C826FD177E0C} = {32616ACE-6851-43EE-9BD4-C826FD177E0C}
+	EndProjectSection
+EndProject
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "FreeRTOS", "FreeRTOS\FreeRTOS.cproj", "{C7AF4BA3-C77B-4B82-BBB7-30ADF31DE6CF}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "FastLED", "FastLED\FastLED.cppproj", "{F9FB3030-BB07-4C60-8844-CD22C28F612D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{32616ACE-6851-43EE-9BD4-C826FD177E0C} = {32616ACE-6851-43EE-9BD4-C826FD177E0C}
+	EndProjectSection
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ArduinoCore", "ArduinoCore\ArduinoCore.cppproj", "{32616ACE-6851-43EE-9BD4-C826FD177E0C}"
+EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Adafruit_NeoPixel", "Adafruit_NeoPixel\Adafruit_NeoPixel.cppproj", "{5E8F2F63-06E1-4ED9-AE83-7B500C0D4306}"
+	ProjectSection(ProjectDependencies) = postProject
+		{32616ACE-6851-43EE-9BD4-C826FD177E0C} = {32616ACE-6851-43EE-9BD4-C826FD177E0C}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.ActiveCfg = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Debug|AVR.Build.0 = Debug|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.ActiveCfg = Release|AVR
+		{DCE6C7E3-EE26-4D79-826B-08594B9AD897}.Release|AVR.Build.0 = Release|AVR
+		{C7AF4BA3-C77B-4B82-BBB7-30ADF31DE6CF}.Debug|AVR.ActiveCfg = Debug|AVR
+		{C7AF4BA3-C77B-4B82-BBB7-30ADF31DE6CF}.Debug|AVR.Build.0 = Debug|AVR
+		{C7AF4BA3-C77B-4B82-BBB7-30ADF31DE6CF}.Release|AVR.ActiveCfg = Release|AVR
+		{C7AF4BA3-C77B-4B82-BBB7-30ADF31DE6CF}.Release|AVR.Build.0 = Release|AVR
+		{F9FB3030-BB07-4C60-8844-CD22C28F612D}.Debug|AVR.ActiveCfg = Debug|AVR
+		{F9FB3030-BB07-4C60-8844-CD22C28F612D}.Debug|AVR.Build.0 = Debug|AVR
+		{F9FB3030-BB07-4C60-8844-CD22C28F612D}.Release|AVR.ActiveCfg = Release|AVR
+		{F9FB3030-BB07-4C60-8844-CD22C28F612D}.Release|AVR.Build.0 = Release|AVR
+		{32616ACE-6851-43EE-9BD4-C826FD177E0C}.Debug|AVR.ActiveCfg = Debug|AVR
+		{32616ACE-6851-43EE-9BD4-C826FD177E0C}.Debug|AVR.Build.0 = Debug|AVR
+		{32616ACE-6851-43EE-9BD4-C826FD177E0C}.Release|AVR.ActiveCfg = Release|AVR
+		{32616ACE-6851-43EE-9BD4-C826FD177E0C}.Release|AVR.Build.0 = Release|AVR
+		{5E8F2F63-06E1-4ED9-AE83-7B500C0D4306}.Debug|AVR.ActiveCfg = Debug|AVR
+		{5E8F2F63-06E1-4ED9-AE83-7B500C0D4306}.Debug|AVR.Build.0 = Debug|AVR
+		{5E8F2F63-06E1-4ED9-AE83-7B500C0D4306}.Release|AVR.ActiveCfg = Release|AVR
+		{5E8F2F63-06E1-4ED9-AE83-7B500C0D4306}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
