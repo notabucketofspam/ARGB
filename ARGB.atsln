@@ -36,6 +36,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		update_subs.sh = update_subs.sh
 	EndProjectSection
 EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "avr-libstdcpp", "avr-libstdcpp\avr-libstdcpp.cppproj", "{B8431B6D-B82A-4626-80C4-845A2D527093}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -62,6 +64,10 @@ Global
 		{5E8F2F63-06E1-4ED9-AE83-7B500C0D4306}.Debug|AVR.Build.0 = Debug|AVR
 		{5E8F2F63-06E1-4ED9-AE83-7B500C0D4306}.Release|AVR.ActiveCfg = Release|AVR
 		{5E8F2F63-06E1-4ED9-AE83-7B500C0D4306}.Release|AVR.Build.0 = Release|AVR
+		{B8431B6D-B82A-4626-80C4-845A2D527093}.Debug|AVR.ActiveCfg = Debug|AVR
+		{B8431B6D-B82A-4626-80C4-845A2D527093}.Debug|AVR.Build.0 = Debug|AVR
+		{B8431B6D-B82A-4626-80C4-845A2D527093}.Release|AVR.ActiveCfg = Release|AVR
+		{B8431B6D-B82A-4626-80C4-845A2D527093}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,16 +1,20 @@
 [submodule "FreeRTOS/miniAVRfreeRTOS"]
 	path = FreeRTOS/miniAVRfreeRTOS
 	url = https://github.com/feilipu/miniAVRfreeRTOS.git
-  ignore = all
+	ignore = all
 [submodule "ArduinoCore/ArduinoCore-avr"]
 	path = ArduinoCore/ArduinoCore-avr
 	url = https://github.com/arduino/ArduinoCore-avr.git
-  ignore = all
+	ignore = all
 [submodule "Adafruit_NeoPixel/Adafruit_NeoPixel"]
 	path = Adafruit_NeoPixel/Adafruit_NeoPixel
 	url = https://github.com/adafruit/Adafruit_NeoPixel.git
-  ignore = all
+	ignore = all
 [submodule "FastLED/FastLED"]
 	path = FastLED/FastLED
 	url = https://github.com/FastLED/FastLED.git
-  ignore = all
+	ignore = all
+[submodule "avr-libstdcpp/avr-libstdcpp"]
+	path = avr-libstdcpp/avr-libstdcpp
+	url = https://github.com/modm-io/avr-libstdcpp.git
+	ignore = all

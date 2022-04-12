@@ -3,3 +3,4 @@ cd FreeRTOS/miniAVRfreeRTOS && git checkout master && git pull && git submodule 
 cd ArduinoCore/ArduinoCore-avr && git checkout master && git pull && git submodule update && cd ../..
 cd Adafruit_NeoPixel/Adafruit_NeoPixel && git checkout master && git pull && git submodule update && cd ../..
 cd FastLED/FastLED && git checkout master && git pull && git submodule update && cd ../..
+cd avr-libstdcpp/avr-libstdcpp && git checkout master && git pull && git submodule update && cd ..\..
