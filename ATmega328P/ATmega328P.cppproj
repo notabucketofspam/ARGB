@@ -164,12 +164,13 @@
   </avrgcccpp.compiler.symbols.DefSymbols>
   <avrgcccpp.compiler.directories.IncludePaths>
     <ListValues>
+      <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\2.0.401\include\</Value>
       <Value>../../FreeRTOS/miniAVRfreeRTOS</Value>
+      <Value>../../avr-libstdcpp/avr-libstdcpp/include</Value>
       <Value>../../ArduinoCore/ArduinoCore-avr/cores/arduino</Value>
       <Value>../../ArduinoCore/ArduinoCore-avr/variants/standard</Value>
       <Value>../../Adafruit_NeoPixel/Adafruit_NeoPixel</Value>
       <Value>../../FastLED/FastLED/src</Value>
-      <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\2.0.401\include\</Value>
     </ListValues>
   </avrgcccpp.compiler.directories.IncludePaths>
   <avrgcccpp.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcccpp.compiler.optimization.level>
