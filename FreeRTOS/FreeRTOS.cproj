@@ -17,7 +17,7 @@
     <AssemblyName>FreeRTOS</AssemblyName>
     <Name>FreeRTOS</Name>
     <RootNamespace>FreeRTOS</RootNamespace>
-    <ToolchainFlavour>Native</ToolchainFlavour>
+    <ToolchainFlavour>avr-gcc-11.1.0-x64-windows</ToolchainFlavour>
     <KeepTimersRunning>true</KeepTimersRunning>
     <OverrideVtor>false</OverrideVtor>
     <CacheFlash>true</CacheFlash>
@@ -42,11 +42,24 @@
         </dependencies>
       </framework-data>
     </AsfFrameworkConfig>
+    <avrtool>com.atmel.avrdbg.tool.simulator</avrtool>
+    <avrtoolserialnumber />
+    <avrdeviceexpectedsignature>0x1E950F</avrdeviceexpectedsignature>
+    <com_atmel_avrdbg_tool_simulator>
+      <ToolOptions xmlns="">
+        <InterfaceProperties>
+        </InterfaceProperties>
+      </ToolOptions>
+      <ToolType xmlns="">com.atmel.avrdbg.tool.simulator</ToolType>
+      <ToolNumber xmlns="">
+      </ToolNumber>
+      <ToolName xmlns="">Simulator</ToolName>
+    </com_atmel_avrdbg_tool_simulator>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
     <ToolchainSettings>
       <AvrGcc>
-        <avrgcc.common.Device>-mmcu=atmega328p -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega328p"</avrgcc.common.Device>
+        <avrgcc.common.Device>-mmcu=atmega328p</avrgcc.common.Device>
         <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
         <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
         <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
@@ -61,7 +74,7 @@
         </avrgcc.compiler.symbols.DefSymbols>
         <avrgcc.compiler.directories.IncludePaths>
           <ListValues>
-            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+            <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\2.0.401\include\</Value>
           </ListValues>
         </avrgcc.compiler.directories.IncludePaths>
         <avrgcc.compiler.optimization.level>Optimize for size (-Os)</avrgcc.compiler.optimization.level>
@@ -75,7 +88,7 @@
         </avrgcc.linker.libraries.Libraries>
         <avrgcc.assembler.general.IncludePaths>
           <ListValues>
-            <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+            <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\2.0.401\include\</Value>
           </ListValues>
         </avrgcc.assembler.general.IncludePaths>
       </AvrGcc>
@@ -84,7 +97,7 @@
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <ToolchainSettings>
       <AvrGcc>
-  <avrgcc.common.Device>-mmcu=atmega328p -B "%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\gcc\dev\atmega328p"</avrgcc.common.Device>
+  <avrgcc.common.Device>-mmcu=atmega328p</avrgcc.common.Device>
   <avrgcc.common.outputfiles.hex>True</avrgcc.common.outputfiles.hex>
   <avrgcc.common.outputfiles.lss>True</avrgcc.common.outputfiles.lss>
   <avrgcc.common.outputfiles.eep>True</avrgcc.common.outputfiles.eep>
@@ -100,8 +113,8 @@
   </avrgcc.compiler.symbols.DefSymbols>
   <avrgcc.compiler.directories.IncludePaths>
     <ListValues>
-      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
       <Value>../miniAVRfreeRTOS</Value>
+      <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\2.0.401\include\</Value>
     </ListValues>
   </avrgcc.compiler.directories.IncludePaths>
   <avrgcc.compiler.optimization.level>Optimize debugging experience (-Og)</avrgcc.compiler.optimization.level>
@@ -109,7 +122,7 @@
   <avrgcc.compiler.optimization.AllocateBytesNeededForEnum>True</avrgcc.compiler.optimization.AllocateBytesNeededForEnum>
   <avrgcc.compiler.optimization.DebugLevel>Default (-g2)</avrgcc.compiler.optimization.DebugLevel>
   <avrgcc.compiler.warnings.AllWarnings>True</avrgcc.compiler.warnings.AllWarnings>
-  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu11</avrgcc.compiler.miscellaneous.OtherFlags>
+  <avrgcc.compiler.miscellaneous.OtherFlags>-std=gnu17</avrgcc.compiler.miscellaneous.OtherFlags>
   <avrgcc.linker.general.NoSharedLibraries>True</avrgcc.linker.general.NoSharedLibraries>
   <avrgcc.linker.libraries.Libraries>
     <ListValues>
@@ -118,7 +131,7 @@
   </avrgcc.linker.libraries.Libraries>
   <avrgcc.assembler.general.IncludePaths>
     <ListValues>
-      <Value>%24(PackRepoDir)\atmel\ATmega_DFP\1.6.364\include\</Value>
+      <Value>%24(PackRepoDir)\Atmel\ATmega_DFP\2.0.401\include\</Value>
     </ListValues>
   </avrgcc.assembler.general.IncludePaths>
   <avrgcc.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcc.assembler.debugging.DebugLevel>
