@@ -25,6 +25,15 @@ Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "Adafruit_NeoPixel", "Adafru
 		{32616ACE-6851-43EE-9BD4-C826FD177E0C} = {32616ACE-6851-43EE-9BD4-C826FD177E0C}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{861A09EF-B85A-4890-8F4E-B4734C263E03}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		.gitmodules = .gitmodules
+		patch.sh = patch.sh
+		readme.md = readme.md
+		update_subs.sh = update_subs.sh
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
