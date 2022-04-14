@@ -1,7 +1,7 @@
 #include "Smoothie.h"
 void task_Smoothie(void *arg) {
   CRGB *leds;
-  uint8_t led_ct;
+  uint16_t led_ct;
   uint8_t controller_bit = 1;
   do {
     CLEDController *controller =  (CLEDController *)arg;
@@ -17,8 +17,8 @@ void task_Smoothie(void *arg) {
   for (;;) {
     xEventGroupSync(xControllerEGH, controller_bit, 0x80, portMAX_DELAY);
     // --- ARGB code goes here
-    for (uint8_t px = 0; px < led_ct; ++px)
-      leds[px].setHue(px*UINT8_MAX/led_ct + offset);
+    for (uint16_t px = 0; px < led_ct; ++px)
+      leds[px].setHue((uint8_t)(px*UINT8_MAX/led_ct + (uint16_t)offset));
     ++offset;
   }
 }
