@@ -31,7 +31,7 @@ int main(void) {
     &FastLED.addLeds<NEOPIXEL, BORDER_OUT_PIN>(leds_Border, BORDER_LED_CT);
   xTaskCreate(task_Smoothie, "Border", 64, controller_Border, 1, NULL);
   CLEDController *controller_Bracket =
-  &FastLED.addLeds<NEOPIXEL, BRACKET_OUT_PIN>(leds_Bracket, BRACKET_LED_CT);
+    &FastLED.addLeds<NEOPIXEL, BRACKET_OUT_PIN>(leds_Bracket, BRACKET_LED_CT);
   xTaskCreate(task_Smoothie, "Bracket", 64, controller_Bracket, 1, NULL);
   // Like above, this will remove a check against micros() in FastLED.cpp
   FastLED.setMaxRefreshRate(0);
