@@ -204,7 +204,7 @@
   <avrgcccpp.assembler.debugging.DebugLevel>Default (-Wa,-g)</avrgcccpp.assembler.debugging.DebugLevel>
 </AvrGccCpp>
     </ToolchainSettings>
-    <PostBuildEvent>$(ToolchainDir)\avr-size.exe $(MSBuildProjectName).elf</PostBuildEvent>
+    <PostBuildEvent>$(ToolchainDir)\avr-size.exe $(OutputFileName)$(OutputFileExtension)</PostBuildEvent>
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Blink.cpp">
