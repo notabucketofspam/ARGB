@@ -17,7 +17,7 @@ CRGB leds_RadiantD[RADIANTD_LED_CT];
 #define BORDER_LED_CT 120
 CRGB leds_Border[BORDER_LED_CT];
 #define BRACKET_OUT_PIN 11
-#define BRACKET_LED_CT 1
+#define BRACKET_LED_CT 6
 CRGB leds_Bracket[BRACKET_LED_CT];
 int main(void) {
   xControllerEGH = xEventGroupCreate();
