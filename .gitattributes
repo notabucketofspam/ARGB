@@ -1,2 +1,7 @@
 * text=auto
 *.sh text eol=lf
+*.bat text eol=crlf
+*.patch text eol=lf
+*.atsln text eol=crlf
+*.cppproj text eol=crlf
+*.componentinfo.xml text eol=crlf
