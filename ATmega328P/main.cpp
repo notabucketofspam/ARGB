@@ -14,7 +14,7 @@ void task_Show(void *arg);
 #define RADIANTD_LED_CT 9
 CRGB leds_RadiantD[RADIANTD_LED_CT];
 #define BORDER_OUT_PIN 10
-#define BORDER_LED_CT 120
+#define BORDER_LED_CT 94
 CRGB leds_Border[BORDER_LED_CT];
 #define BRACKET_OUT_PIN 11
 #define BRACKET_LED_CT 6
