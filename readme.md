@@ -1,6 +1,8 @@
 # ARGB
 
-Intended for use with an ATmega328P device, such as the Gelid Solutions CODI6.
+Intended for use with an ATmega328P device, such as the Gelid Solutions CODI6, available [here][-1].
+
+Both of the executable projects are usable, however the FreeRTOS version is not as preferred due to its lack of granular task scheduling.
 
 Notes:
 
@@ -34,6 +36,7 @@ Notes:
   - Debugging via the Atmel Studio Simulator, with or without GDB, will no longer work. An alternative external simulator, AVRSimV2, is [here][4].
     - If use of the Atmel Studio Simulator is absolutely necessary, then `Toolchain Flavour` under `Project Properties (Alt + F7) -> Advanced` must be reverted to `Native` for each project in the dependency tree.
 
+[-1]: https://gelidsolutions.com/thermal-solutions/codi6-argb-controller/
 [0]: https://www.microchip.com/en-us/tools-resources/develop/microchip-studio
 [1]: http://packs.download.atmel.com/
 [2]: https://github.com/ZakKemble/avr-gcc-build/releases

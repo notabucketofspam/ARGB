@@ -39,6 +39,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 EndProject
 Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "avr-libstdcpp", "avr-libstdcpp\avr-libstdcpp.cppproj", "{B8431B6D-B82A-4626-80C4-845A2D527093}"
 EndProject
+Project("{E66E83B9-2572-4076-B26E-6BE79FF3018A}") = "ATmega328P-NoFreeRTOS", "ATmega328P-NoFreeRTOS\ATmega328P-NoFreeRTOS.cppproj", "{626D1CE1-FB6E-474F-8095-B1F731CEB107}"
+	ProjectSection(ProjectDependencies) = postProject
+		{F9FB3030-BB07-4C60-8844-CD22C28F612D} = {F9FB3030-BB07-4C60-8844-CD22C28F612D}
+		{32616ACE-6851-43EE-9BD4-C826FD177E0C} = {32616ACE-6851-43EE-9BD4-C826FD177E0C}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|AVR = Debug|AVR
@@ -69,6 +75,10 @@ Global
 		{B8431B6D-B82A-4626-80C4-845A2D527093}.Debug|AVR.Build.0 = Debug|AVR
 		{B8431B6D-B82A-4626-80C4-845A2D527093}.Release|AVR.ActiveCfg = Release|AVR
 		{B8431B6D-B82A-4626-80C4-845A2D527093}.Release|AVR.Build.0 = Release|AVR
+		{626D1CE1-FB6E-474F-8095-B1F731CEB107}.Debug|AVR.ActiveCfg = Debug|AVR
+		{626D1CE1-FB6E-474F-8095-B1F731CEB107}.Debug|AVR.Build.0 = Debug|AVR
+		{626D1CE1-FB6E-474F-8095-B1F731CEB107}.Release|AVR.ActiveCfg = Release|AVR
+		{626D1CE1-FB6E-474F-8095-B1F731CEB107}.Release|AVR.Build.0 = Release|AVR
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
