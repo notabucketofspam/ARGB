@@ -1,8 +1,6 @@
 # ARGB
 
-### ATmega328P + FreeRTOS + FastLED
-
-Intended for use with the Gelid Solutions CODI6, or really any system in need of parallel ARGB output.
+Intended for use with an ATmega328P device, such as the Gelid Solutions CODI6.
 
 Notes:
 
@@ -32,10 +30,12 @@ Notes:
       - Adjust `-C"C:\opt\avr-gcc-11.1.0-x64-windows\bin\avrdude.conf"` for the location of `avrdude.conf`.
     - Initial directory: `$(TargetDir)`
     - Tick the box next to `Use Output window`.
-- Any first-time build errors can be ignored.
-- Build output will no longer show `Program Memory Usage` or `Data Memory Usage`,
-  hence the post-build use of avr-size.
+  - Build output will no longer show `Program Memory Usage` or `Data Memory Usage`. However, `avr-size.exe` will give the size in bytes of the `text`, `data`, and `bss` memory sections; information about AVR memory sections is [here][3].
+  - Debugging via the Atmel Studio Simulator, with or without GDB, will no longer work. An alternative external simulator, AVRSimV2, is [here][4].
+    - If use of the Atmel Studio Simulator is absolutely necessary, then `Toolchain Flavour` under `Project Properties (Alt + F7) -> Advanced` must be reverted to `Native` for each project in the dependency tree.
 
 [0]: https://www.microchip.com/en-us/tools-resources/develop/microchip-studio
 [1]: http://packs.download.atmel.com/
 [2]: https://github.com/ZakKemble/avr-gcc-build/releases
+[3]: https://www.nongnu.org/avr-libc/user-manual/mem_sections.html
+[4]: https://git.rwth-aachen.de/jonas.broeckmann/avrsimv2
