@@ -4,10 +4,6 @@
   and <miniAVRfreeRTOS/port.c> for the watchdog setup
 */
 #include "blink_isr.h"
-#include <avr/sfr_defs.h>
-#include <avr/io.h>
-#include <avr/interrupt.h>
-#include <avr/wdt.h>
 // Toggle light
 ISR(WDT_vect, ISR_NOBLOCK) {
   static unsigned char led_on;
