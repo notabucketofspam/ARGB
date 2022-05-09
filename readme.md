@@ -2,7 +2,7 @@
 
 Intended for use with an ATmega328P device, such as the Gelid Solutions CODI6, available [here][-1].
 
-Both of the executable projects are usable, however the FreeRTOS version is not as preferred due to its lack of granular task scheduling.
+The FreeRTOS version of the project is now deprecated due to its lack of granular task scheduling.
 
 Notes:
 
