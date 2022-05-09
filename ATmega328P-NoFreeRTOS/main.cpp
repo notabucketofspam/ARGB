@@ -15,7 +15,7 @@
 #define FAN_LED_CT 12
 #define FAN_CT 3
 CRGB leds_Fans[FAN_LED_CT*FAN_CT];
-#define BORDER_OUT_PIN 10
+#define BORDER_OUT_PIN 11
 #define BORDER_LED_CT 94
 CRGB leds_Border[BORDER_LED_CT];
 #define BRACKET_OUT_PIN 6
