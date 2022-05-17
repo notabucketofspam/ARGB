@@ -1,6 +1,6 @@
 # ARGB
 
-Intended for use with an ATmega328P device, such as the Gelid Solutions CODI6, available [here][-1].
+Intended for use with an ATmega328P device, such as the Gelid Solutions CODI6, available [here][-1]. A list of complimentary ARGB products is [here][-2].
 
 The FreeRTOS version of the project is now deprecated due to its lack of granular task scheduling.
 
@@ -42,3 +42,4 @@ Notes:
 [2]: https://github.com/ZakKemble/avr-gcc-build/releases
 [3]: https://www.nongnu.org/avr-libc/user-manual/mem_sections.html
 [4]: https://git.rwth-aachen.de/jonas.broeckmann/avrsimv2
+[-2]: ./parts_list.md
