@@ -23,6 +23,9 @@ CRGB leds_Border[BORDER_LED_CT];
 #define BRACKET_OUT_PIN 6
 #define BRACKET_LED_CT 6
 CRGB leds_Bracket[BRACKET_LED_CT];
+#define CABLE_OUT_PIN 9
+#define CABLE_LED_CT 162
+CRGB leds_Cable[CABLE_LED_CT];
 #define FILL_SMOOTHIE(leds, start, led_ct, offset) \
   for (uint8_t px = 0; px < (led_ct); ++px) (leds)[px + (start)].setHue(px*UINT8_MAX/(led_ct) + (offset))
 int main(void) {
@@ -30,6 +33,8 @@ int main(void) {
   FastLED.addLeds<NEOPIXEL, FANS_EX_OUT_PIN>(leds_FansEx, FAN_LED_CT*FAN_CT);
   FastLED.addLeds<NEOPIXEL, BORDER_OUT_PIN>(leds_Border, BORDER_LED_CT);
   FastLED.addLeds<NEOPIXEL, BRACKET_OUT_PIN>(leds_Bracket, BRACKET_LED_CT);
+  FastLED.addLeds<NEOPIXEL, CABLE_OUT_PIN>(leds_Cable, CABLE_LED_CT);
+  fill_solid(leds_Cable, CABLE_LED_CT, CRGB(0xFF7B00));
   FastLED.setMaxRefreshRate(0);
   uint8_t offset = 0;
   blink_isr_enable();
