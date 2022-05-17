@@ -24,7 +24,7 @@ CRGB leds_Border[BORDER_LED_CT];
 #define BRACKET_LED_CT 6
 CRGB leds_Bracket[BRACKET_LED_CT];
 #define FILL_SMOOTHIE(leds, start, led_ct, offset) \
-  for (uint8_t px = 0; px < (led_ct); ++px) (leds)[px + start].setHue(px*UINT8_MAX/(led_ct) + (offset))
+  for (uint8_t px = 0; px < (led_ct); ++px) (leds)[px + (start)].setHue(px*UINT8_MAX/(led_ct) + (offset))
 int main(void) {
   FastLED.addLeds<NEOPIXEL, FANS_IN_OUT_PIN>(leds_FansIn, FAN_LED_CT*FAN_CT);
   FastLED.addLeds<NEOPIXEL, FANS_EX_OUT_PIN>(leds_FansEx, FAN_LED_CT*FAN_CT);
