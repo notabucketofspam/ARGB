@@ -24,7 +24,9 @@ CRGB leds_Border[BORDER_LED_CT];
 #define BRACKET_LED_CT 6
 CRGB leds_Bracket[BRACKET_LED_CT];
 #define CABLE_OUT_PIN 9
-#define CABLE_LED_CT 162
+// 162 real, but without controller can only access 6 per row with 27 rows
+//#define CABLE_LED_CT 162
+#define CABLE_LED_CT 27
 CRGB leds_Cable[CABLE_LED_CT];
 #define FILL_SMOOTHIE(leds, start, led_ct, offset) \
   for (uint8_t px = 0; px < (led_ct); ++px) (leds)[px + (start)].setHue(px*0x100u/(led_ct) + (offset))
@@ -34,7 +36,8 @@ int main(void) {
   FastLED.addLeds<NEOPIXEL, BORDER_OUT_PIN>(leds_Border, BORDER_LED_CT);
   FastLED.addLeds<NEOPIXEL, BRACKET_OUT_PIN>(leds_Bracket, BRACKET_LED_CT);
   FastLED.addLeds<NEOPIXEL, CABLE_OUT_PIN>(leds_Cable, CABLE_LED_CT);
-  fill_solid(leds_Cable, CABLE_LED_CT, CRGB(0xFF7B00));
+  // Placeholder until Lian Li L Connect 3 controller arrives from Newegg
+  fill_solid(leds_Cable, CABLE_LED_CT, CRGB(0xFF7B00).nscale8(0x40));
   FastLED.setMaxRefreshRate(0);
   uint8_t offset = 0;
   blink_isr_enable();
