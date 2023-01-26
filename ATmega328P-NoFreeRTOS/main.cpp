@@ -97,7 +97,7 @@ int main(void) {
     _delay_us(FRAMETIME_US);
     // Top fan
     // Left
-    for (uint8_t px = 2; px < FAN_LED_CT/2; ++px)
+    for (uint8_t px = 2; px < FAN_LED_CT/2 + 1; ++px)
       leds_FansIn[px] = ColorFromPalette(palette2, FAN_SHIFT(px) + offset);
     //Right
     leds_FansIn[0] = ColorFromPalette(palette2, offset);
@@ -110,7 +110,7 @@ int main(void) {
     // Since the center is in reverse (CCW instead of CW), shifts have to align
     // opposite of the fan adjacent (i.e. top -> bottom, left -> right), with +1 for timing
     // Left
-    for (uint8_t px = 2; px < FAN_LED_CT/2; ++px)
+    for (uint8_t px = 2; px < FAN_LED_CT/2 + 1; ++px)
       leds_FansIn[px + FAN_LED_CT] = ColorFromPalette(palette2, FAN_SHIFT(px + 20) - offset);
     // Right
     leds_FansIn[FAN_LED_CT] = ColorFromPalette(palette2, FAN_SHIFT(8) - offset);
@@ -121,7 +121,7 @@ int main(void) {
     leds_FansIn[FAN_LED_CT + 7] = ColorFromPalette(palette3, FAN_SHIFT(2) - offset);
     // Bottom fan
     // Left
-    for (uint8_t px = 2; px < FAN_LED_CT/2; ++px)
+    for (uint8_t px = 2; px < FAN_LED_CT/2 + 1; ++px)
       leds_FansIn[px + 2*FAN_LED_CT] = ColorFromPalette(palette2, FAN_SHIFT(px + FAN_LED_CT + 1) + offset);
     // Right
     leds_FansIn[2*FAN_LED_CT] = ColorFromPalette(palette2, FAN_SHIFT(2*FAN_LED_CT) + offset);
